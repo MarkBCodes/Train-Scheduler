@@ -1,12 +1,15 @@
-// Firebase Config
-var firebaseConfig = {
-  apiKey: "AIzaSyD-jmpCERf4Yo4Gm3P7IAuzZAPGFST0omE",
-  authDomain: "my-first-porject-e0b87.firebaseapp.com",
-  databaseURL: "https://my-first-porject-e0b87.firebaseio.com",
-  projectId: "my-first-porject-e0b87",
-  storageBucket: "my-first-porject-e0b87.appspot.com",
-  messagingSenderId: "203434104992",
-  appId: "1:203434104992:web:e7689d129391f116"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+$(document).ready(function() {
+  // Firebase Config
+  var firebaseConfig = {
+    apiKey: "AIzaSyDOKkrZpMm9BHFM_iJ9Q-cat6IhQQmV_B4",
+    authDomain: "trainscheduler-2dceb.firebaseapp.com",
+    databaseURL: "https://trainscheduler-2dceb.firebaseio.com",
+    projectId: "trainscheduler-2dceb",
+    storageBucket: "",
+    messagingSenderId: "375834453294",
+    appId: "1:375834453294:web:595c24b71229635a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+});
