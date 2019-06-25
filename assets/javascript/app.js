@@ -23,5 +23,19 @@ $(document).ready(function() {
     var firstTrain = $("#firstTrainInput").val().trim();
     var trainFreq = $("#freqInput").val().trim();
 
+    //Creates temporary local object for holding data
+    var newTrain = {
+      name: trainName,
+      destination: trainDest,
+      start: firstTrain,
+      frequency: trainFreq
+    };
+
+    //data upload to firebase
+    database.ref().push(newTrain);
+
+    alert("Train successfully added!"); //tells user input saved/added
+
+
 
 });
