@@ -64,7 +64,7 @@ $(document).ready(function() {
     var firstTime = 0; //entered on the entry form.
 
     //time conversion going back 1 year
-    var firstTimeConverted = moment(firstTime, "HH:mm").substract(1, "years");
+    var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
     console.log(firstTimeConverted);
 
     //current time
